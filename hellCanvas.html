@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Hello canvas</title>
+
+  <style>
+      #canvas {
+          border: 1px black solid;
+      }
+  </style>
+</head>
+<body>
+
+    <!-- Write your HTML content here -->
+    <canvas id="canvas" height="200" width="300"></canvas>
+
+<script>
+
+    // Write your script here
+    let canvas = document.getElementById("canvas");
+    let context = canvas.getContext("2d");
+
+    // Set fill color to red, draw a filled square
+    // Use fillReact, with height and width the same
+    context.fillRect(20, 20, 100, 100);
+    context.fillRectStyle = "red";
+    //context.fillRect(20, 20, 100, 100);
+    // Set the stroke color to blue, draw the outline of a square
+    context.strokeRect(150, 20, 100, 100);
+    context.strokeStyle = "blue";
+
+    // draw a couple of rectangles
+    context.strokeRect(270, 20, 50, 100);
+    context.strokeStyle = "purple";
+    context.strokeRect(260, 40, 110, 500);
+
+    context.strokeStyle = "purple";
+    context.fillRectStyle = "gold";
+    context.fillRect(20, 20, 100, 100);
+    context.strokeRect(150, 20, 100, 100);
+    
+
+
+</script>
+
+</body>
+</html>
